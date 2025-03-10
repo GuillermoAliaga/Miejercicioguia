@@ -98,6 +98,6 @@ int main(int argc, char *argv[])
 			}
 		}
 		// Se acabo el servicio para este cliente
-		close(sock_conn); 
+		close(sock_conn);
 	}
 }
