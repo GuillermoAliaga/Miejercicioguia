@@ -99,12 +99,12 @@ int main(int argc, char *argv[])
 			{
 				int izquierda = 0;
 				int derecha = strlen(nombre) - 1;
-				int esPalindromo = 1; // 1 significa que es palíndromo, 0 que no lo es
+				int esPalindromo = 1; 
 				
 				while (izquierda < derecha) {
 					if (nombre[izquierda] != nombre[derecha]) {
-						esPalindromo = 0; // No es palíndromo
-						break; // Salir del bucle, ya no hace falta seguir verificando
+						esPalindromo = 0;
+						break; 
 					}
 					izquierda++;
 					derecha--;
@@ -115,16 +115,16 @@ int main(int argc, char *argv[])
 				else
 					strcpy(respuesta, "NO");   
 			}
-			else if (codigo == 5) // Convertir el nombre a mayúsculas
+			else if (codigo == 5) 
 			{
-				// Convertir el nombre directamente en este bloque
+				
 				for (int i = 0; nombre[i] != '\0'; i++) {
 					if (nombre[i] >= 'a' && nombre[i] <= 'z') {
-						nombre[i] -= 32; // Convierte minúsculas a mayúsculas
+						nombre[i] -= 32; 
 					}
 				}
 				
-				// Enviar el nombre ya en mayúsculas como respuesta
+				
 				sprintf(respuesta, "%s", nombre);
 			}
 				
